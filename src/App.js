@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="privacy" element={<Privacy/>}/>
+        <Route path="/mygitpage/home" element={<Home/>}/>
+        <Route path="/mygitpage/about" element={<About/>}/>
+        <Route path="/mygitpage/privacy" element={<Privacy/>}/>
       </Routes>
     </div>
   );
@@ -20,8 +20,8 @@ function Home(){
     <nav>
       <ul className="my-list">
         <li>Home</li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/privacy">Privacy</Link></li>
+        <li><Link to="/mygitpage/about">About</Link></li>
+        <li><Link to="/mygitpage/privacy">Privacy</Link></li>
       </ul>
     </nav>
     <main>
@@ -38,9 +38,9 @@ function About(){
     <>
     <nav>
       <ul className="my-list">
-      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/mygitpage/home">Home</Link></li>
         <li>About</li>
-        <li><Link to="/privacy">Privacy</Link></li>
+        <li><Link to="/mygitpage/privacy">Privacy</Link></li>
       </ul>
     </nav>
     <main>
@@ -57,8 +57,8 @@ function Privacy(){
     <>
     <nav>
       <ul className="my-list">
-      <li><Link to= "/home">Home</Link></li>
-        <li><Link to= "/about">About</Link></li>
+      <li><Link to="/mygitpage/home">Home</Link></li>
+        <li><Link to="/mygitpage/about">About</Link></li>
         <li>Privacy</li>
       </ul>
     </nav>
